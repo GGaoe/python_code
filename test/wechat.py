@@ -9,14 +9,14 @@ with open("C:/Users/高歌/Desktop/晚霞预测结果.txt", "r", encoding="utf-8
     contents = file.read()
 
 # 现在contents变量包含了txt文档的全部内容，可以按需使用
-print(contents)
+#print(contents)
 
 
-#def get_msg():
-    #"""想发的消息，每条消息空格分开"""
-    #contents = "晚上你吃啥 啥，不知道 那听我安排吧 晚上回来先歇会 可以先吃个火龙果，我已经拿出来了 等会会有外卖给你打电话 " \
-    #           "拿到外卖再开始做饭都不晚 什么外卖你别问 这次让我卖个关子可行"
-    #return contents.split(" ")
+def get_msg():
+    """想发的消息，每条消息空格分开"""
+    contents = "晚上你吃啥 啥，不知道 那听我安排吧 晚上回来先歇会 可以先吃个火龙果，我已经拿出来了 等会会有外卖给你打电话 " \
+               "拿到外卖再开始做饭都不晚 什么外卖你别问 这次让我卖个关子可行"
+    return contents.split(" ")
 
 
 def send(msg):
